@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <title></title>
-  <meta charset="utf-8" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
-<body>
-    <script>
-        function Speak() {
-            speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is my voice on a webpage"));
+    <title>Speech color changer</title>
 
-            var speech = new SpeechSynthesisUtterance();
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-            speech.text = "Hello";
+  <body>
+    <h1>Speech color changer</h1>
 
-            speech.volume = 1; // 0 to 1
+    <p class="hints"></p>
+    <div>
+        <p class="output"><em>...diagnostic messages</em></p>
+    </div>
 
-            speech.rate = 1; // 0.1 to 9
-
-            speech.pitch = 1; // 0 to 2, 1=normal
-
-            speech.lang = "en-US";
-
-            speechSynthesis.speak(speech);
-        }
-    </script>
-    <a id="trigger_me" onclick="Speak()">Speakme</a>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
