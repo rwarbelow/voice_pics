@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-
     <title></title>
-
   <meta charset="utf-8" />
-
 </head>
 
 <body>
-
     <script>
-
         function Speak() {
             speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is my voice on a webpage"));
 
@@ -30,13 +24,8 @@
             speech.lang = "en-US";
 
             speechSynthesis.speak(speech);
-
         }
-
     </script>
-
     <a id="trigger_me" onclick="Speak()">Speakme</a>
-
 </body>
-
 </html>
